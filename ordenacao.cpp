@@ -3,21 +3,16 @@
 using namespace std;
 
 int main() {
-	int lista[5];
-	lista[0] = 10;
-	lista[1] = 30;
-	lista[2] = 32;
-	lista[3] = 21;
-	lista[4] = 31;
-
+	//Lista 01
+	int lista01[] = {20, 32, 34, 54};
 	int menorValor = 0;
-	
 	for(int i = 0; i <= 4; i++) {
-		if(lista[i] < lista[menorValor]) {
+		if(lista01[i] < lista01[menorValor]) {
 			menorValor = i;
 		}
 	}
-	
-	cout << "O menor valor " << lista[menorValor] << endl;
+
+	cout << "O menor valor da lista 01 : " << lista01[menorValor] << endl;
+
 	return 0;
 }
